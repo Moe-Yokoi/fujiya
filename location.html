@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fujiya - Locations</title>
+    <link rel="stylesheet" href="css/location.css">
+</head>
+<body>
+    <div class="logo-container-l">
+        <div class="logo-container-s">
+            <img src="images/fujiya-logo.png" class="logo" id="logo" alt="logo">
+        </div>
+    </div>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Locations</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="sidebar-wrap">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#clark">Clark</a></li>
+                <li><a href="#downtown">Downtown</a></li>
+                <li><a href="#richmond">Richmond</a></li>
+                <li><a href="#victoria">Victoria</a></li>
+                <li><a href="home.html" id="home">Home</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="main">
+    <div class="main-container">
+        <div class="title">
+            <h2>Locations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ad blanditiis quisquam quis laborum iusto labore. Ratione dolores eveniet blanditiis atque natus modi. Possimus, deserunt veritatis adipisci non cupiditate sequi.</p>
+        </div>
+
+        <div class="each-location" id="clark">
+            <div class="dsc">
+                <h3>Clark Fujiya</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis voluptatum, eius modi at nobis quas assumenda quidem consequuntur fuga officiis recusandae culpa ipsum, dignissimos doloribus beatae nulla qui ex?</p>
+                <p>Adress : xxxxxxxxxxx</p>
+                <p>Phone : xxx-xxx-xxxx</p>
+                <p>Hours : 10:30 am - 6:00 pm</p>
+            </div>
+            <div class="map" id="map"></div>
+        </div>
+
+        <div class="each-location" id="downtown">
+            <div class="dsc">
+                <h3>Downtown Fujiya</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis voluptatum, eius modi at nobis quas assumenda quidem consequuntur fuga officiis recusandae culpa ipsum, dignissimos doloribus beatae nulla qui ex?</p>
+                <p>Adress : xxxxxxxxxxx</p>
+                <p>Phone : xxx-xxx-xxxx</p>
+                <p>Hours : 10:30 am - 6:00 pm</p>
+            </div>
+            <div class="map" id="map2"></div>
+        </div>
+
+        <div class="each-location" id="richmond">
+            <div class="dsc">
+                <h3>Richmond Fujiya</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis voluptatum, eius modi at nobis quas assumenda quidem consequuntur fuga officiis recusandae culpa ipsum, dignissimos doloribus beatae nulla qui ex?</p>
+                <p>Adress : xxxxxxxxxxx</p>
+                <p>Phone : xxx-xxx-xxxx</p>
+                <p>Hours : 10:30 am - 6:00 pm</p>
+            </div>
+            <div class="map" id="map3"></div>
+        </div>
+
+        <div class="each-location" id="victoria">
+            <div class="dsc">
+                <h3>Victoria Fujiya</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis voluptatum, eius modi at nobis quas assumenda quidem consequuntur fuga officiis recusandae culpa ipsum, dignissimos doloribus beatae nulla qui ex?</p>
+                <p>Adress : xxxxxxxxxxx</p>
+                <p>Phone : xxx-xxx-xxxx</p>
+                <p>Hours : 10:30 am - 6:00 pm</p>
+            </div>
+            <div class="map" id="map4"></div>
+        </div>
+
+        <button><a href="#logo">Top</a></button>
+
+    </div>
+</div>
+
+    <footer>
+        <ul>
+            <li>Site Map</li>
+            <li>Privacy Policy</li>
+            <li>Contact Us</li>
+        </ul>
+        <ul>
+            <li>Vancouver</li>
+            <li>Downtown Vancouver</li>
+            <li>Richmond</li>
+            <li>Victoria</li>
+        </ul>
+
+    </footer>
+    <script>
+      function initMap() {
+        const myLatLng = { lat: 49.2765, lng: -123.077 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: myLatLng,
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          map:map,
+          title: "Fujiya",
+        });
+
+        const myLatLng2 = { lat: 49.28486853356586, lng: -123.09421752828217 };
+        const map2 = new google.maps.Map(document.getElementById("map2"), {
+          zoom: 15,
+          center: myLatLng2,
+        });
+        new google.maps.Marker({
+          position: myLatLng2,
+          map:map2,
+          title: "Fujiya",
+        });
+
+        const myLatLng3 = { lat: 49.204583863097525, lng: -123.10496803059597 };
+        const map3 = new google.maps.Map(document.getElementById("map3"), {
+          zoom: 15,
+          center: myLatLng3,
+        });
+        new google.maps.Marker({
+          position: myLatLng3,
+          map:map3,
+          title: "Fujiya",
+        });
+
+        const myLatLng4 = { lat: 48.45954992021005, lng:-123.33322351545705 };
+        const map4 = new google.maps.Map(document.getElementById("map4"), {
+          zoom: 15,
+          center: myLatLng4,
+        });
+        new google.maps.Marker({
+          position: myLatLng4,
+          map:map4,
+          title: "Fujiya",
+        });
+      }
+
+    
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXnhPHteWAQb_X6RXk7nApIjmFCLDdLC0&callback=initMap&libraries=&v=weekly"
+      async></script>
+</body>
+</html>
+
